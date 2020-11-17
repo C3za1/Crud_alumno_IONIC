@@ -1,0 +1,102 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Edit alumno
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="full">
+    <form [formGroup]="updateBookingForm" (ngSubmit)="updateForm()">
+
+<!--
+      <ion-item>
+        <ion-label position="floating">Name</ion-label>
+        <ion-input formControlName="name" type="text" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input formControlName="email" type="text" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Mobile</ion-label>
+        <ion-input formControlName="mobile" type="text" required>
+        </ion-input>
+      </ion-item>
+    -->
+    <ion-item>
+      <ion-label position="floating">nombre</ion-label>
+      <ion-input formControlName="nombre" type="text" required>
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">apellidoPaterno</ion-label>
+      <ion-input formControlName="apellidoPaterno" type="text" required>
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">apellidoMaterno</ion-label>
+      <ion-input formControlName="apellidoMaterno" type="text" required>
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">edad</ion-label>
+      <ion-input formControlName="edad" type="text" required>
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">fechaNacimiento</ion-label>
+      <ion-input formControlName="fechaNacimiento" type="text" required>
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">gradoEstudios</ion-label>
+      <ion-input formControlName="gradoEstudios" type="text" required>
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">curp</ion-label>
+      <ion-input formControlName="curp" type="text" required>
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">estado</ion-label>
+      <ion-input formControlName="estado" type="text" required>
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">ciudad</ion-label>
+      <ion-input formControlName="ciudad" type="text" required>
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">nombreDpadreOtutor</ion-label>
+      <ion-input formControlName="nombreDpadreOtutor" type="text" required>
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">numeroCelular</ion-label>
+      <ion-input formControlName="numeroCelular" type="text" required>
+      </ion-input>
+    </ion-item>
+    
+
+
+
+
+
+
+
+
+      <ion-row>
+        <ion-col>
+          <ion-button type="submit" color="primary" shape="full" expand="block">Update alumno</ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-list>
+</ion-content>
